@@ -1,0 +1,16 @@
+The Console object provides access to the browser's debugging console. following are the various methods of console:-
+
+console.assert():- Writes an error message to the console if the assertion is false
+console.clear():- Clears the console
+console.count():- Logs the number of times that this particular call to count() has been called
+console.error():- Outputs an error message to the console
+console.group():- Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called
+console.groupCollapsed():- Creates a new inline group in the console. However, the new group is created collapsed. The user will need to use the disclosure button to expand it
+console.groupEnd():- Exits the current inline group in the console
+console.info():- Outputs an informational message to the console
+console.log():- Outputs a message to the console
+console.table():- Displays tabular data as a table
+console.time():- Starts a timer (can track how long an operation takes)
+console.timeEnd():- Stops a timer that was previously started by console.time()
+console.trace():- Outputs a stack trace to the console
+console.warn():- Outputs a warning message to the console
