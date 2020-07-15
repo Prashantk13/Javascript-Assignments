@@ -1,0 +1,37 @@
+There are 2 types of data types:
+1) primitive data type
+2) reference data type
+
+1) Primitive data types:- there are 5 types of primitive data types:-
+
+a)Boolean:- A boolean represents only one of two values: true or false.
+  for eg:-var boo1 = true;
+          var boo2 = false;
+
+b)Number:- There is only one type of Number in JavaScript. Numbers can be written with or without a decimal point. A number can also be +Infinity and -Infinity
+  for eg:- var num1 = 32;
+           var num2 = +Infinity;
+
+c)String:- Strings are used for storing text. Strings must be inside of either double or single quotes. In JS, Strings are immutable (they cannot be changed).
+  for eg:- var str1 = 'hello, it is me';
+           var str2 = "hello, it's me";
+
+d)Null:- Null has one value: null. It is explicitly nothing.
+  for eg:- var nothing = null;
+
+e)Undefined:- A variable that has no value is undefined.
+  for eg:- var testVar;
+           console.log(testVar); // undefined
+
+2) Reference data type:- there are 3 reference data types:-
+
+a)Array:- JavaScript arrays are written with square brackets. Array items are separated by commas.
+  for eg:- var cars = ["Saab", "Volvo", "BMW"];
+
+b)Objects:- JavaScript objects are written with curly braces {}. Object properties are written as name:value pairs, separated by commas.
+  for eg:- var person = {firstName:"prashant", lastName:"kotnala", age:22};
+
+c)Functions:- The function is callable object that executes a block of code. Since functions are objects, so it is possible to assign them to variables.
+  for eg:-var greeting = function(){ 
+          return "Hello World!";
+          alert(greeting());
