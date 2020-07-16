@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+<p id="demo"></p>
+
+<p>The length() method returns the length:</p>
+<p id="demo1"></p>
+
+<p>The lastIndexOf() method returns the last index of specified text:</p>
+<p id="demo2"></p>
+
+<p>The search() method returns specified text:</p>
+<p id="demo3"></p>
+
+<p>The slice() method returns the last index of specified text:</p>
+<p id="demo4"></p>
+
+<p>The replace() method replaces the specified text:</p>
+<p id="demo5"></p>
+
+//ArrayMethods:
+
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="sample"></p>
+
+<p>The join() method also joins all array elements into a string.</p>
+<p id="sample1"></p>
+
+<p>The splice() method returns an array with the deleted items:</p>
+<p id="sample2"></p>
+
+<p>The slice() method slices out a piece of an array into a new array.</p>
+<p id="sample3"></p>
+
+<p>The reverse() method reverses an array elements:</p>
+<p id="sample4"></p>
+
+
+
+
+
+<script>
+
+var str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.indexOf("where");
+
+document.getElementById("demo1").innerHTML = str.length;
+
+document.getElementById("demo2").innerHTML = str.lastIndexOf("occurs!");
+
+document.getElementById("demo3").innerHTML = str.search("locate");
+
+document.getElementById("demo4").innerHTML = str.slice(10);
+
+document.getElementById("demo5").innerHTML = str.replace("locate","find");
+
+
+var fruits = ["Mobile", "Charger", "laptop", "Cable","Tablet"];
+document.getElementById("sample").innerHTML = gadgets.toString();
+
+document.getElementById("sample1").innerHTML = gadgets.join("*");
+
+document.getElementById("sample2").innerHTML = gadgets.splice(1,2);
+
+document.getElementById("sample3").innerHTML = gadgets.slice(0);
+
+document.getElementById("sample4").innerHTML = gadgets.reverse();
+</script>
+
+</body>
+</html>
