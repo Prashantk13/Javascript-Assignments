@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+     
+</head>
+<body>
+  <script>
+    const name = prompt("Enter your name","Human");
+    document.write("Hello " +name);
+</script>
+  <h1>Welcome!!</h1>
+  <h2 id="time"></h2>
+  <button onclick="myFunction()">Toggle dark mode</button>
+    
+<script>
+const ctime = document.getElementById('time');
+function clock(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    ctime.innerText = time;
+ }
+
+ clock();
+
+ setInterval(clock,1000);
+</script>
+<script>
+ function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<style>
+  body {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  </style>
+   
+</body>
+</html>
