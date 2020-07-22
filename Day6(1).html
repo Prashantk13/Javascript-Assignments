@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Assignment 1</title>
+  <h2>Hello Human!!</h2>
+	<script type="text/javascript">
+	var colors = ["lavanderblush", "lavender","orange","yellow", "peach"];
+	var currentColorIndex = 0;
+
+	function changeColor() {
+		document.bgColor = colors[currentColorIndex];
+		currentColorIndex = (currentColorIndex + 1) % colors.length;
+		setTimeout(changeColor, 5000);
+	}
+	</script>
+</head>
+<body onload="changeColor()">
+
+</body>
+</html>
