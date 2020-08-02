@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+	<div class="form">
+
+	<h2 class="header">To do List</h2>
+
+    <form action="" id="myForm">
+        <input class="em" type="text" id="todo" placeholder="add task...">
+        <button type="button" id="btn" value="submit" onclick="additem()" onkeypress="additem()">ADD</button>
+		
+
+    </form>
+
+    <ul id="list">
+	  <li class="checked">Attend JavaScript lectures</li>
+      <li>Practise the codes</li>
+      <li>Read a book on JavaScript</li>
+      <li class="checked">Organise my notes</li>
+      <li>Create JavaScript projects</li>
+      <li>Take quiz</li>
+	  <li>Comprehend interview questions</li>
+	</ul>
+	<button type="button" id="clear-list" onclick="clearitem()" >Clear Items</button>
+    <span style="font-size: 48px; color: Dodgerblue;"><i class="fas fa-plus-circle"></i></span>
+</div>
+	
+    <script src="todolist.js"></script>
+</body>
+</html>
